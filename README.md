@@ -13,7 +13,10 @@ If you want to do some reading on threads (in Java) you might find
 [this tutorial](http://www.tutorialspoint.com/java/java_multithreading.htm)
 to be helpful (be sure to go through the 4 additional tutorials at the bottom of
   that last tutorial before proceeding).  
+  
 You might also find [this writeup](http://www.javaworld.com/article/2077138/java-concurrency/introduction-to-java-threads.html) to be helpful.
+
+Some of you may have already gone through these tutorials when reviewing the `threadsandprocesses` file on canvas.
 
 ## Communicating through shared state
 
