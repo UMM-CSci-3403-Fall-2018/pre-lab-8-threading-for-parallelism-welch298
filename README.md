@@ -90,7 +90,7 @@ the second thread, etc.
 
 ## Exiting early if you find the target
 
-If you implement this as described above, each of your threads will check their entire section of the list _even if one of the other threads has found the `target`_. If you want to really see the benefit of threading, you might want have your search loop also check that `answer.isFound()` is still `false`; if it returns `true` then you know someone else found the `target` and you can quit, even if you have buckets of other values to check.
+If you implement this as described above, each of your threads will check their entire section of the list _even if one of the other threads has found the `target`_. If you want to really see the benefit of threading, you might want have your search loop also check that `answer.getAnswer()` is still `false`; if it returns `true` then you know someone else found the `target` and you can quit, even if you have buckets of other values to check.
 
 ## Does threading speed things up?
 
