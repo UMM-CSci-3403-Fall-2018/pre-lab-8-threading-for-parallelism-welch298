@@ -1,12 +1,12 @@
 package search;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class LinearSearch<T> {
-    
-    public boolean search(T target, ArrayList<T> list) {
-        for(int i=0; i<list.size(); i++){
-            if(list.get(i).equals(target)) {
+public class LinearSearch<T> implements Searcher<T> {
+
+    public boolean search(T target, List<T> list) {
+        for (T item : list) {
+            if (item.equals(target)) {
                 return true;
             }
         }
