@@ -11,11 +11,8 @@ public class ThreadedSearch<T> implements Searcher<T>, Runnable {
     private int end;
     private Answer answer;
 
-    public ThreadedSearch(int numThreads) {
+    public ThreadedSearch(int numThreads, T target, List<T> list, int begin, int end, Answer answer) {
         this.numThreads = numThreads;
-    }
-
-    private ThreadedSearch(T target, List<T> list, int begin, int end, Answer answer) {
         this.target = target;
         this.list = list;
         this.begin = begin;
